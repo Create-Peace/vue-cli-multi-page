@@ -1,7 +1,7 @@
 import HelloWold from '../components/HelloWorld.vue'
 export default [
     {
-        path: '/hello-world',
+        path: '/index/hello-world',
         name: 'hello-world',
         component: HelloWold
     }

@@ -13,7 +13,7 @@ module.exports = {
         print: {
             entry: 'src/print/main.js',
             template: 'public/print.html',
-            filename: '/public/index.html',
+            filename: 'print.html',
             title: 'print Page',
         }
     },
@@ -21,6 +21,17 @@ module.exports = {
         config.resolve.alias
             .set('@', resolve('src'))
             .set('assets',resolve('src/assets'))
-            .set('components',resolve('src/components'))
+            .set('components',resolve('src/components'));
+    },
+    configureWebpack: {
+        devServer: {
+            historyApiFallback: {
+                verbose: true,
+                rewrites: [
+                    { from: /^\/index\/.*$/, to: '/index.html'},
+                    {from: /^\/print\/.*$/, to: '/print.html'}
+                ]
+            }
+        }
     }
 }
