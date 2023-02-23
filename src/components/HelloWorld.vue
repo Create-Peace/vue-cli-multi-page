@@ -2,6 +2,7 @@
   <div class="hello">
     <img alt="Vue logo" src="../assets/logo.png">
     <h1>helloworld</h1>
+    <a-component />
   </div>
 </template>
 

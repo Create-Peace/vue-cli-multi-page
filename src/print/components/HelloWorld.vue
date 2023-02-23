@@ -3,6 +3,7 @@
     <img alt="Vue logo" src="../../assets/logo.png">
     <h1>print</h1>
      <router-link to="/print/go-back"> 测试跳转</router-link> 
+     <a-component />
   </div>
 </template>
 
